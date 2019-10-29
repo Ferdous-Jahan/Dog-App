@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="2px solid">
+        <tr>
+            <th>Breed</th>
+            <th>Image</th>
+            <th>Age</th>
+        </tr>
+        <% dogs.forEach(function(dog){ %>
+        <tr>
+            <td><%= dog.breed %></td>
+            <td><img src=<%= dog.image %> alt="dog"  height="100" width="100"/></td>
+            <td><%= dog.age %></td>
+        </tr>
+        <% }) %>
+
+    </table>
+</body>
+
+</html>

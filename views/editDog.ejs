@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="POST" action="/dog/{{id}}?postMethodOverride=PUT">
+        <label for="breed">Breed</label>
+        <input type="text" name="breed" value="<% dog.breed %>">
+
+        <label for="image">Image</label>
+        <input type="text" name="image" value=<img src=<%= dog.image %> alt="dog"  height="100" width="100"/>>
+
+        <label for="age">Age</label>
+        <input type="number" name="age" value="<% dog.age %>">
+
+        <button>Update</button>
+    </form>
+</body>
+
+</html>

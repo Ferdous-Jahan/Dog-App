@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Age Calculator</h1>
+    <form method="POST" action="/calculate">
+    <label for='name'>Name</label>
+    <input type="text"  name="name">
+    
+    <label for='age'>Birth Year</label>
+    <input type="number" name='birthYear'>
+    <button type="submit">Calculate</button>
+    </form>
+
+   <h3>Name <%= name %> Age <%= age %></h3>
+</body>
+</html>
